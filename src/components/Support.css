@@ -1,0 +1,74 @@
+.supportContent {
+    height: 20vh;
+    width: 100vw;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.SupportBody{
+ 
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+      
+}
+.SupportBody::before {
+    content: '';
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../Assets/Supportpagebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(30%);
+    z-index: -1; 
+    height: calc(100% - 10vh);
+}
+
+.supportContent h1 {
+    font-size: 40px;
+}
+
+.supportContent p {
+    font-size: 20px;
+}
+
+.SupportBody {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailbox,
+.phonebox {
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box-shadow for a subtle effect */
+}
+
+.contactinfo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}

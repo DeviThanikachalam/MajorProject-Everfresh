@@ -1,0 +1,97 @@
+.Aboutus {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.Aboutus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../Assets/AboutPagebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(30%);
+    z-index: -1; /* Push the background behind the content */
+}
+
+.Aboutbox {
+    height: 85vh;
+    width: 75vw;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.AboutContent {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    
+    
+}
+
+.AboutContent h1 {
+    text-align: start;
+}
+
+.AboutContent p {
+    text-align:justify;
+}
+
+ img {
+    object-fit: contain;
+    outline-offset: -1px;
+    border-radius: 8px;
+    height: 56vh;
+    width: 48vw;
+    float: right;
+}
+.AboutUSimg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutContent p > span {
+    background-color: red;
+    margin-top: 10px;
+}
+
+.AboutButtons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    animation-name: homeAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.AboutButtons button {
+    height: 6vh;
+    background-color: rgb(74, 74, 207);
+    border-radius:10px;
+    width: 200px;
+    font-size: larger;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: scale(0.9);
+    
+}
+.AboutButtons button:hover {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    transform :scale(1);
+}
+

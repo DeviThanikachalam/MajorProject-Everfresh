@@ -1,0 +1,88 @@
+.Home {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .Home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../Assets/Homebg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(30%);
+  }
+  
+  .HomeContent {
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 800px; /* Adjust as needed for your design */
+    width: 90%;
+    animation-name: homeAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes homeAnimation {
+    0% {
+      transform: translateY(20%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .HomeContent h1 {
+    text-align: center;
+    font-size: 4vw; /* Responsive font size */
+    font-weight: lighter;
+  }
+  
+  .HomeContent p {
+    font-size: 2vw; /* Responsive font size */
+  }
+  
+  .HomeButtons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    animation-name: homeAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  .HomeButtons button {
+    height: 6vh;
+    min-width: 150px; /* Adjust as needed for your design */
+    background-color: rgb(74, 74, 207);
+    border-radius: 10px;
+    font-size: 1.5vw; /* Responsive font size */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+  
+  .HomeButtons button:hover {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+    transform: scale(1);
+  }
+  
+  .HomeContent h1,
+  .HomeContent p {
+    position: relative;
+    z-index: 1;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  

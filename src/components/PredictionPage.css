@@ -1,0 +1,237 @@
+/* Updated Color Scheme for the Prediction Page */
+
+.Prediction {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Times New Roman', Times, serif;
+  /* background-image: url('E:/PROJECTS/DEVI/devil/src/Assets/PredictionPagebg.jpg'); */
+}
+
+.Prediction::before {
+  content: '';
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../Assets/PredictionPagebg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: opacity(30%);
+  z-index: -1;
+   /* Push the background behind the content */
+   height: calc(100% - 10vh);
+}
+
+.InputPage {
+  height: 90vh;
+  width: 40%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: #f9f9f9;  */
+}
+
+.PredictionPage {
+  height: 90vh;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.InputBox {
+  height: 70vh;
+  width: 80%;
+  border-radius: 20px;
+}
+.InputPage h1{
+    font-size: 50px;
+}
+.InputBox form {
+  margin: 5vh;
+  border-radius: 20px;
+}
+
+label {
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-weight: bold;
+}
+
+label input,
+select {
+  height: 5vh;
+  border-radius: 10px;
+  border: 1px solid #555; /* Dark Grey Border */
+  color: #333; /* Dark Grey Text Color */
+}
+
+label p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.fields {
+  margin-top: 2vh;
+}
+
+/* Styling for file input button */
+input[type=file]::file-selector-button {
+  width: 50%;
+  margin-right: 20px;
+  border: none;
+  background: #0066cc; /* Blue */
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #004080; /* Darker Blue on Hover */
+}
+
+#fileInput {
+  border: none;
+}
+
+/* Loading Animation Styles */
+.BeforePrediction,
+.AfterPrediction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.BeforePrediction h1,
+.AfterPrediction h1 {
+  width: 100%;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #d3d3d3; /* Light Grey on Hover */
+}
+
+/* Styling for Prediction Result Page */
+.AfterPrediction {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.colorcircle {
+  height: 40vh;
+  width: 40vh;
+  border: 10px solid #333; /* Dark Grey Border */
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ResultNotes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  /* border: 1px solid black; */
+}
+.ResultNotes h5{
+  font-size: 20px;
+}
+
+/* Styling for Refresh Button */
+.button {
+  color: #fff; /* White Text Color */
+  background-color: #555; /* Dark Grey Background */
+  font-weight: 500;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  /* margin-top: 10px; */
+}
+
+.button:hover {
+  background-color: #777; /* Slightly Lighter Grey on Hover */
+}
+
+.button svg {
+  display: inline;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.75rem;
+  color: #fff; /* White Text Color */
+}
+
+.button:focus svg {
+  animation: spin_357 0.5s linear;
+}
+
+.BeforePrediction h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Loading {
+  display: inline-block;
+}
+
+.Loading span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInOut 1.7s infinite alternate; /* Adjust the animation duration as needed */
+}
+
+.Loading span:nth-child(2) {
+  animation-delay: 0.2s; 
+}
+
+.Loading span:nth-child(3) {
+  animation-delay: 0.4s; /* Adjust the delay for the third dot */
+}
+
+.Loading span:nth-child(4) {
+  animation-delay: 0.6s; /* Adjust the delay for the fourth dot */
+}
+
+.Loading span:nth-child(5) {
+  animation-delay: 0.8s; /* Adjust the delay for the fifth dot */
+}
+
+.Loading span:nth-child(6) {
+  animation-delay: 1s; /* Adjust the delay for the sixth dot */
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  50% {
+      opacity: 1;
+      transform: translateY(-10px); /* Adjust the vertical movement as needed */
+  }
+}

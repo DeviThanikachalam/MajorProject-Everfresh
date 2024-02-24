@@ -1,0 +1,33 @@
+.NavBar {
+  height: 10vh;
+  width: 100vw;
+  background-color: rgba(123, 231, 123,0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.NavContent {
+  display: flex;
+  gap: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.NavContent a {
+  text-decoration: none;
+  color: black;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.NavContent a:hover,
+.NavContent a:focus,
+.NavContent a:active {
+  background-color: #45a049;
+  color: white;
+}
